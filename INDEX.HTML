@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <meta Charset="utf-8">
+       <title>  </title>
+       <LInk rel="stylesheet" href="estilo.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+      <i class="icon-menu burger-button" id="burger-menu"></i>
+       <header class="header">
+        
+         <div class="container">
+            <figure>
+                <img src="compu.png" width="90px" height="70px">
+            </figure>
+            <nav
+            class="menu">
+              <ol>
+                 <li>
+                    <a class="link"href="#"> Inicio </a>
+                 </li>
+                 <li>
+                    <a class="link" href="#"> quienes somos </a>
+                 </li>
+                 <li>
+                    <a class="link" href="#"> contacto </a> 
+                </li>
+              </ol>  
+            </nav>
+         </div>
+       </header>
+
+       <section class="martha">
+         <div class="container">
+           <h1>
+              hola soy <strong>martha castañeda</strong><br> Eres un guerrero sigue adelante</br>
+              <p>hola soy estudiante de sistemas</p>
+           </h1>
+           <img class="marthaimagen" src="ofimatica.jpg" width="350" height="250">
+        </div>
+       </section>
+
+       <h2>portafolio (proyectos destacados)</h2>
+       <section id="portafolio" class="portafolio"> 
+         <div class="container"></div>
+         
+         <article class="project">
+            <div class="project-details"> 
+            <h3 class="project-tittle">platzi video</h3>
+            <h6 class="project-course"> react native/react </h6>
+            <p class="project-date"> <small><strong>fecha</strong>: 27/04/2024</small></p>
+            <p class="project description"><small><strong>puedes verlo en:</strong>www.mbdigital.com</small></p>
+            <p class="texto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. At voluptatem cupiditate, <br> necessitatibus magnam excepturi assumenda molestiae praesentium nihil temporibus, <br> nam quod, non dolorum quibusdam. Autem cumque minus error eligendi doloribus!
+            </div>
+         </article>
+         <img src="ofi.jpg" class="project-image" width="400">
+       </section>
+
+      <div class="container">
+      <h2 class="event-list-title"> Mas sobre ofimatica </h2>
+      </div>
+
+      <section id="aprendido" class="event-list">
+         <div class="container">
+
+            <article class="event">
+               <figure class="event-imageContainer">
+               
+                     <video class="video" src="informatica y ofi.mp4" width="500px" height="200px" controls> </video>
+                  
+               </figure>
+
+               <div class="event-details">
+                  <h3 class="event-title"> cuso sena </h3>
+                  <p class="event-description"> vale la pena verlo </p>
+                  <a href="#experiencia" class="event-url">ver curso</a>
+               </div>
+            </article>
+
+
+            <article class="event">
+               <figure class="event-imageContainer">
+               
+                     <video class="video" src="video.mp4" width="500px" height="200px" controls> </video>
+                  
+               </figure>
+
+               <div class="event-details">
+                  <h3 class="event-title"> cuso sena </h3>
+                  <p class="event-description"> vale la pena verlo </p>
+                  <a href="#experiencia" class="event-url">ver curso</a>
+               </div>
+            </article>
+
+            <article class="event">
+               <figure class="event-imageContainer">
+               
+                     <video class="video" src="ofimatica.mp4" width="500px" height="200px" controls> </video>
+                  
+               </figure>
+
+               <div class="event-details">
+                  <h3 class="event-title"> cuso sena </h3>
+                  <p class="event-description"> vale la pena verlo </p>
+                  <a href="#experiencia" class="event-url">ver curso</a>
+               </div>
+            </article>
+
+            <article class="event">
+               <figure class="event-imageContainer">
+               
+                     <video class="video" src="ofimatica.mp4" width="500px" height="200px" controls> </video>
+                  
+               </figure>
+
+               <div class="event-details">
+                  <h3 class="event-title"> cuso sena </h3>
+                  <p class="event-description"> vale la pena verlo </p>
+                  <a href="#experiencia" class="event-url">ver curso</a>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <section id="contacto" class="contact">
+         
+         <div class="container">
+            <form action="castanedamartha072016@gmail.com" class="form-email">
+               <h3> creamos algo juntos </h3>
+               <input type="text" placeholder="dejame tu email">
+               <button> enviar </button>
+            </form>
+
+            <div class="social">
+            <a href="" class="social-link twiter"><img src="tt.png"></a>
+            <a href="" class="social-link facebook"><img src="fb.png"></a>
+            <a href="" class="social-link instagram"><img src="it.png"></a>
+            </div>
+      </div>
+      </section>
+
+   
+   
+   <footer class="footer">
+      <div class="container">
+         <div><p> curso de desarrollo en oftimatica </p></div>
+         <div><p>
+            Diseñado por martha castañeda 
+         </p></div>
+      </div>
+   </footer>
+
+
+   <script>
+		const ipad = window.matchMedia("screen and(max-width: 767px)")
+		
+		 const menu = document.querySelector(".menu");
+		// console.log(menu);
+		 const burgerButton = document.querySelector("#burger-menu");
+		// console.log(burgerButton);
+		 
+		 burgerButton.addEventListener("click" , hideShow)
+		 
+		 ipad.addListener(validation)
+		 
+		 function validation(event) {
+			 
+			 if (event.matches){
+				 burgerButton.addEventListener("click" , hideShow)
+			 }
+			
+			 
+		 }
+		 
+		 function hideShow() {
+		
+			if (menu.classList.contains("is-active")){
+				menu.classList.remove("is-active");
+			}else{
+		
+			 menu.classList.add("is-active"); }
+		  }
+	</script>
+
+
+</body> 
+
+</html>
